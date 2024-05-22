@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="menu"><img src="/image/menu.png" width="20" height="20"></a>
+                </li>
+                <li class="nav-logo">
+                    <a href="#about"><img src="/image/Untitle.png" width="200" height="80"></a>
+                </li>
+                <li class="nav-item right">
+                    <a href="#setting"><img src="/image/setting.png" width="20" height="20"></a>
+                </li>
+                <li class="nav-item right">
+                    <a href="#option"><img src="/image/option.png" width="20" height="20"></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="button">
+            <button class="nav-button active"><i class="fas fa-file-alt"></i> Văn bản</button>
+            <button class="nav-button active"><i class="fas fa-file"></i> Tài liệu</button>
+            <button class="nav-button active"><i class="fas fa-image"></i> Hình ảnh</button>
+            <button class="nav-button active"><i class="fas fa-globe"></i> Trang web</button>
+        </nav>
+        
+        <main>
+            <div class="language-selection">
+                <h3>Phát hiện ngôn ngữ</h3>
+                <select id="input-language">
+                    <!-- <option>Phát hiện ngôn ngữ</option> -->
+                    <option>Anh</option>
+                    <option selected>Việt</option>
+                </select>
+                <button id="swap-languages">&#x21C4;</button>
+                <select id="output-language">
+                    <option>Việt</option>
+                    <option selected>Anh</option>
+                </select>
+            </div>
+            <div class="translator">
+                <div class="input-section">
+                    <textarea id="input-text" placeholder="Enter text"></textarea>
+                </div>
+                <div class="output-section">
+                    <textarea id="output-text" readonly placeholder="Bản dịch"></textarea>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Gửi ý kiến phản hồi</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
